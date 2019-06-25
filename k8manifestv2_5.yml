@@ -16,9 +16,9 @@ configuration:
   - account: my-docker-registry
     enabled: false
     name: unnamed0
-    organization: veerendra2
+    organization: opsmx11
     registry: quay.io
-    repository: veerendra2/restapp
+    repository: opsmx11/restapp
     type: docker
 id: testauth-testmanifest
 metadata:
@@ -78,7 +78,7 @@ stages:
               env: []
               image: ${ trigger.artifacts[0].reference }
               imagePullPolicy: Always
-              name: veerendra2-restapp
+              name: opsmx11-restapp
               ports:
               - containerPort: 8080
                 name: http
