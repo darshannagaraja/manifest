@@ -17,7 +17,7 @@ configuration:
     enabled: false
     name: unnamed0
     organization: opsmx11
-    registry: quay.io
+    registry: hub.docker.io
     repository: opsmx11/restapp
     type: docker
 id: testauth-testmanifest
