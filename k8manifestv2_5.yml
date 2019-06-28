@@ -18,7 +18,7 @@ configuration:
     name: unnamed0
     organization: opsmx11
     registry: hub.docker.io
-    repository: opsmx11/restapp
+    repository: opsmx11/restapp:simple-1.0
     type: docker
 id: testauth-testmanifest
 metadata:
