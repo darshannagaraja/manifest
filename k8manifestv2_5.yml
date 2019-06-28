@@ -12,14 +12,6 @@ configuration:
   concurrentExecutions:
     limitConcurrent: true
     parallel: false
-  triggers:
-  - account: my-docker-registry
-    enabled: false
-    name: unnamed0
-    organization: opsmx11
-    registry: index.docker.io
-    repository: opsmx11/restapp:simple-1.0
-    type: docker
 id: testauth-testmanifest
 metadata:
   description: This template does not have a description
