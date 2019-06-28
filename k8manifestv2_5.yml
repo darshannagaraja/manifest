@@ -17,7 +17,7 @@ configuration:
     enabled: false
     name: unnamed0
     organization: opsmx11
-    registry: https://index.docker.io
+    registry: index.docker.io
     repository: opsmx11/restapp:simple-1.0
     type: docker
 id: testauth-testmanifest
@@ -76,7 +76,7 @@ stages:
             - args: []
               command: []
               env: []
-              image: ${ trigger.artifacts[0].reference }
+              image: opsmx11/restapp:simple-1.0
               imagePullPolicy: Always
               name: opsmx11-restapp
               ports:
