@@ -40,13 +40,13 @@ stages:
       metadata:
         finalizers: []
         labels:
-          app: openshifttest3
-          cluster: openshifttest3-test
-          #openshifttest3-test-v000: 'true'
-          replication-controller: openshifttest3-test-v000
+          app: templatewithparam
+          cluster: templatewithparam-test
+          #templatewithparam-test-v000: 'true'
+          replication-controller: templatewithparam-test-v000
           stack: test
           #version: '0'
-        name: openshifttest3-test-v000
+        name: templatewithparam-test-v000
         namespace: default
         ownerReferences: []
       spec:
@@ -54,20 +54,20 @@ stages:
         selector:
           matchExpressions: []
           matchLabels:
-            app: openshifttest3
-            cluster: openshifttest3-test
-            #openshifttest3-test-v000: 'true'
-            replication-controller: openshifttest3-test-v000
+            app: templatewithparam
+            cluster: templatewithparam-test
+            #templatewithparam-test-v000: 'true'
+            replication-controller: templatewithparam-test-v000
             stack: test
             #version: '0'
         template:
           metadata:
             finalizers: []
             labels:
-              app: openshifttest3
-              cluster: openshifttest3-test
-              #openshifttest3-test-v000: 'true'
-              replication-controller: openshifttest3-test-v000
+              app: templatewithparam
+              cluster: templatewithparam-test
+              #templatewithparam-test-v000: 'true'
+              replication-controller: templatewithparam-test-v000
               stack: test
               #version: '0'
             ownerReferences: []
