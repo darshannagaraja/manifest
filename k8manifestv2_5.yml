@@ -32,13 +32,13 @@ stages:
       metadata:
         finalizers: []
         labels:
-          app: templatewithparam
-          cluster: templatewithparam-test
-          #templatewithparam-test-v000: 'true'
-          replication-controller: templatewithparam-test-v000
+          app: weave
+          cluster: weave-net
+          #weave-net-v000: 'true'
+          replication-controller: weave-net-v000
           stack: test
           #version: '0'
-        name: templatewithparam-test-v000
+        name: weave-net-v000
         namespace: default
         ownerReferences: []
       spec:
@@ -46,20 +46,20 @@ stages:
         selector:
           matchExpressions: []
           matchLabels:
-            app: templatewithparam
-            cluster: templatewithparam-test
-            #templatewithparam-test-v000: 'true'
-            replication-controller: templatewithparam-test-v000
+            app: weave
+            cluster: weave-net
+            #weave-net-v000: 'true'
+            replication-controller: weave-net-v000
             stack: test
             #version: '0'
         template:
           metadata:
             finalizers: []
             labels:
-              app: templatewithparam
-              cluster: templatewithparam-test
-              #templatewithparam-test-v000: 'true'
-              replication-controller: templatewithparam-test-v000
+              app: weave
+              cluster: weave-net
+              #weave-net-v000: 'true'
+              replication-controller: weave-net-v000
               stack: test
               #version: '0'
             ownerReferences: []
@@ -108,9 +108,9 @@ stages:
         observedGeneration: 1
         readyReplicas: 1
         replicas: 1
-    #moniker:
-    #  app: k8testapp
-    #  cluster: manifestdev
+    moniker:
+      app: weave
+      cluster: weave-test
     relationships:
       loadBalancers: []
       securityGroups: []
